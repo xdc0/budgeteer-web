@@ -1,0 +1,12 @@
+{
+  "extends": "@tsconfig/node17/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "jsx": "react",
+    "moduleResolution": "Node",
+    "target": "ES6",
+    "lib": ["DOM"],
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/.eslintrc.js"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

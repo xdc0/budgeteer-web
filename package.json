@@ -1,0 +1,44 @@
+{
+  "name": "budgeteer-web",
+  "version": "0.0.0",
+  "description": "Budgeteer web application",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "webpack --config webpack.prod.js",
+    "lint": "eslint . --ext .js,.ts,.tsx",
+    "dev": "webpack serve --config webpack.dev.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xdc0/budgeteer-web.git"
+  },
+  "author": "Xavier Del Castillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xdc0/budgeteer-web/issues"
+  },
+  "homepage": "https://github.com/xdc0/budgeteer-web#readme",
+  "volta": {
+    "node": "17.9.0",
+    "npm": "8.6.0"
+  },
+  "devDependencies": {
+    "@tsconfig/node17": "^1.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.18.0",
+    "@typescript-eslint/parser": "^5.18.0",
+    "eslint": "^8.13.0",
+    "html-webpack-plugin": "^5.5.0",
+    "ts-loader": "^9.2.8",
+    "typescript": "^4.6.3",
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  }
+}
