@@ -1,0 +1,6 @@
+# IDE / Editors
+.idea
+
+# Application
+node_modules
+dist
