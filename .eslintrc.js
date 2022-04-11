@@ -21,6 +21,7 @@ module.exports = {
     'func-style': 0,
     'indent': ['error', 2],
     'max-len': ['error', 120],
+    'max-lines-per-function': ['error', 100],
     'object-curly-spacing': ['error', 'always'],
     'one-var': ['error', 'never'],
     'padded-blocks': ['error', 'never'],
