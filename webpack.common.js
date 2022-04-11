@@ -1,6 +1,6 @@
 const path = require('path');
+const DotEnv = require('dotenv-webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-
 
 module.exports = {
   entry: './src/index.tsx',
@@ -21,6 +21,8 @@ module.exports = {
   plugins: [new HtmlWebpackPlugin({
     template: 'src/index.html',
     title: 'Budgeteer - App'
+  }), new DotEnv({
+    path: './.env'
   })],
   resolve: {
     extensions: [

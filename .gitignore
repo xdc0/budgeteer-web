@@ -4,3 +4,4 @@
 # Application
 node_modules
 dist
+.env
