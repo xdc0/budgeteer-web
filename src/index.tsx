@@ -1,7 +1,9 @@
+import { Provider } from 'react-redux';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 
 import { Layout } from './layout';
+import { store } from './store';
 
 const container = document.getElementById('budgeteer_app');
 
@@ -11,4 +13,13 @@ if (!container) {
 
 const root = createRoot(container);
 
-root.render(<Layout/>);
+function App (): JSX.Element {
+  return (
+    <Provider store={store}>
+      <Layout/>
+    </Provider>
+  );
+}
+
+
+root.render(<App />);
